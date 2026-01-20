@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>가상 풍력발전기 기반 지능형 운영 지원 솔루션 개발 | 신재생에너지 핵심기술개발사업</title>
+    <meta name="description" content="고충실도 디지털 트윈과 AI 기술로 풍력발전기 O&M 비용 10% 이상 절감. 국내 공통 적용 가능한 지능형 운영 및 유지보수 의사결정 지원 솔루션.">
+    <meta name="keywords" content="풍력발전, 디지털 트윈, AI, 유지보수, O&M, 신재생에너지, OpenFAST, 예지보전">
+    <meta name="author" content="디엑스랩즈(주)">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="가상 풍력발전기 기반 지능형 운영 지원 솔루션 개발">
+    <meta property="og:description" content="고충실도 디지털 트윈과 AI 기술로 풍력발전기 O&M 비용 10% 이상 절감">
+    <meta property="og:image" content="./images/og-image.jpg">
+    <meta property="og:url" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="가상 풍력발전기 기반 지능형 운영 지원 솔루션 개발">
+    <meta name="twitter:description" content="고충실도 디지털 트윈과 AI 기술로 풍력발전기 O&M 비용 10% 이상 절감">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-wind"></i>
+                <span>WindTwin</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">홈</a></li>
+                <li><a href="#about" class="nav-link">과제소개</a></li>
+                <li><a href="#technology" class="nav-link">기술·차별성</a></li>
+                <li><a href="#organization" class="nav-link">추진체계</a></li>
+                <li><a href="#timeline" class="nav-link">추진일정</a></li>
+                <li><a href="#demonstration" class="nav-link">실증계획</a></li>
+                <li><a href="#impact" class="nav-link">기대효과</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">신재생에너지 핵심기술개발사업</div>
+                <h1 class="hero-title">
+                    가상 풍력발전기 기반<br>
+                    <span class="highlight">지능형 운영 지원 솔루션</span> 개발
+                </h1>
+                <p class="hero-subtitle">
+                    고충실도 디지털 트윈과 AI 기술로<br>
+                    풍력발전의 미래를 혁신합니다
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="10">0</div>
+                        <div class="stat-label">O&M 비용 절감</div>
+                        <div class="stat-unit">%+</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="5">0</div>
+                        <div class="stat-label">연구 기간</div>
+                        <div class="stat-unit">년</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" data-count="10">0</div>
+                        <div class="stat-label">참여기관</div>
+                        <div class="stat-unit">개</div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-primary">자세히 보기</a>
+                    <a href="#contact" class="btn btn-outline">문의하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="아래로 스크롤">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">ABOUT PROJECT</span>
+                <h2 class="section-title">과제 소개</h2>
+                <p class="section-subtitle">한계에 부딪힌 국내 풍력 산업, 지금 혁신이 필요합니다</p>
+            </div>
+
+            <!-- Problem Statement -->
+            <div class="problem-statement" data-aos="fade-up">
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>SCADA 시스템의 한계</h3>
+                        <p>10분 단위 평균 데이터만 제공되어 기어박스, 베어링의 미세 균열 등 초기 결함 포착이 불가능합니다.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>비효율적 예방정비</h3>
+                        <p>시간 기반 예방정비와 사후 정비 방식은 불필요한 비용을 유발하고 예측 불가능한 고장으로 장기간 가동 중단을 초래합니다.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>막대한 O&M 비용</h3>
+                        <p>해상풍력의 경우 운영유지보수 비용이 전체 수명주기 비용의 <strong>20~35%</strong>를 차지하며 재무적 리스크를 증대시킵니다.</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="problem-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>기술 격차 심화</h3>
+                        <p>국내 기술은 최고기술보유국(EU) 대비 약 <strong>3.5년</strong>의 격차가 존재하며 해외 기술 종속이 심각합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solution Overview -->
+            <div class="solution-overview" data-aos="fade-up">
+                <div class="solution-content">
+                    <div class="solution-text">
+                        <h3 class="solution-title">혁신적 솔루션</h3>
+                        <p class="solution-description">
+                            본 과제는 <strong>고충실도 디지털 트윈 기술</strong>과 <strong>AI 기반 예지보전</strong>을 결합하여 
+                            국내 공통 적용이 가능한 지능형 운영 및 유지보수 의사결정 지원 솔루션을 개발합니다.
+                        </p>
+                        <ul class="solution-features">
+                            <li><i class="fas fa-check-circle"></i> 실제 풍력터빈의 물리적 특성을 정밀하게 모사하는 고충실도 물리모델</li>
+                            <li><i class="fas fa-check-circle"></i> 실시간 데이터로 스스로 최신화하는 Living Model 구현</li>
+                            <li><i class="fas fa-check-circle"></i> NREL OpenFAST 기반으로 다양한 터빈 기종에 호환 가능</li>
+                            <li><i class="fas fa-check-circle"></i> AI 기반 고정밀 이상 진단 및 잔여수명(RUL) 예측</li>
+                            <li><i class="fas fa-check-circle"></i> 특정 제조사에 얽매이지 않는 독자적 운영 지원 체계</li>
+                        </ul>
+                    </div>
+                    <div class="solution-visual">
+                        <div class="solution-diagram">
+                            <div class="diagram-layer">
+                                <i class="fas fa-database"></i>
+                                <span>실시간 데이터</span>
+                            </div>
+                            <div class="diagram-arrow">↓</div>
+                            <div class="diagram-layer">
+                                <i class="fas fa-brain"></i>
+                                <span>AI 분석</span>
+                            </div>
+                            <div class="diagram-arrow">↓</div>
+                            <div class="diagram-layer">
+                                <i class="fas fa-cube"></i>
+                                <span>디지털 트윈</span>
+                            </div>
+                            <div class="diagram-arrow">↓</div>
+                            <div class="diagram-layer">
+                                <i class="fas fa-chart-pie"></i>
+                                <span>의사결정 지원</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Proposition -->
+            <div class="value-proposition" data-aos="fade-up">
+                <h3 class="value-title">기대되는 가치</h3>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <div class="value-number">01</div>
+                        <h4>비용 절감</h4>
+                        <p>데이터 기반의 과학적 정비로 O&M 비용을 <strong>10% 이상 절감</strong>하고 발전기 가동률을 극대화합니다.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">02</div>
+                        <h4>기술 자립</h4>
+                        <p>특정 해외 제조사 종속에서 벗어나 독자적인 운영 주도권을 확보하고 외산 서비스 비용을 절감합니다.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">03</div>
+                        <h4>경쟁력 강화</h4>
+                        <p>국내 해상풍력 환경에 최적화된 예지보전 체계로 글로벌 시장 경쟁력을 세계 수준으로 끌어올립니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology" id="technology">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">TECHNOLOGY</span>
+                <h2 class="section-title">핵심 기술 및 차별성</h2>
+                <p class="section-subtitle">세계 수준의 기술력으로 풍력 산업을 혁신합니다</p>
+            </div>
+
+            <div class="tech-grid">
+                <!-- Tech 1: High-Fidelity Digital Twin -->
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3 class="tech-title">고충실도 디지털 트윈</h3>
+                    <p class="tech-description">
+                        블레이드의 공력학적 특성, 기어박스의 동역학, 발전기의 전자기적 특성 등 
+                        핵심 부품의 거동을 물리 법칙에 기반하여 정밀하게 시뮬레이션합니다.
+                    </p>
+                    <ul class="tech-features">
+                        <li>블레이드 공력 특성 모델링</li>
+                        <li>기어박스 동역학 시뮬레이션</li>
+                        <li>발전기 전자기 특성 구현</li>
+                        <li>구조 건전성 모니터링</li>
+                    </ul>
+                </div>
+
+                <!-- Tech 2: Living Model -->
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="tech-title">Living Model (살아있는 모델)</h3>
+                    <p class="tech-description">
+                        실시간 센서 데이터와 융합하여 물리 모델의 파라미터를 자동으로 보정하고 최신화함으로써 
+                        터빈의 운전 상태와 성능 저하를 정확하게 추종합니다.
+                    </p>
+                    <ul class="tech-features">
+                        <li>실시간 데이터 연동</li>
+                        <li>자동 파라미터 보정</li>
+                        <li>동적 모델 최신화</li>
+                        <li>성능 저하 추적</li>
+                    </ul>
+                </div>
+
+                <!-- Tech 3: AI-based Diagnosis -->
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="tech-title">AI 기반 예지보전</h3>
+                    <p class="tech-description">
+                        SCADA 및 CMS 데이터를 생성형 AI 기술과 결합하여 고정밀 이상 진단과 
+                        신뢰도 높은 잔여수명(RUL) 예측을 실현합니다.
+                    </p>
+                    <ul class="tech-features">
+                        <li>생성형 AI 기반 분석</li>
+                        <li>고장 조기 탐지</li>
+                        <li>잔여수명(RUL) 예측</li>
+                        <li>고장 원인 진단</li>
+                    </ul>
+                </div>
+
+                <!-- Tech 4: OpenFAST Integration -->
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tech-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="tech-title">OpenFAST 기반 통합</h3>
+                    <p class="tech-description">
+                        NREL의 OpenFAST 기반 모델 통합을 통해 다양한 터빈 기종에 대한 
+                        공통 적용 호환성을 확보하고 범용성을 극대화합니다.
+                    </p>
+                    <ul class="tech-features">
+                        <li>다양한 터빈 기종 지원</li>
+                        <li>오픈소스 기반 확장성</li>
+                        <li>표준화된 인터페이스</li>
+                        <li>국내 공통 적용 가능</li>
+                    </ul>
+                </div>
+
+                <!-- Tech 5: SCADA/CMS Integration -->
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="tech-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="tech-title">SCADA/CMS 통합</h3>
+                    <p class="tech-description">
+                        기존 SCADA 시스템과 CMS(Condition Monitoring System) 데이터를 통합하여 
+                        실시간 모니터링과 예측 정비를 위한 완전한 데이터 기반을 구축합니다.
+                    </p>
+                    <ul class="tech-features">
+                        <li>실시간 데이터 수집</li>
+                        <li>통합 데이터베이스</li>
+                        <li>OPC-UA 통신 연계</li>
+                        <li>데이터 손실 최소화</li>
+                    </ul>
+                </div>
+
+                <!-- Tech 6: Decision Support -->
+                <div class="tech-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="tech-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="tech-title">의사결정 지원 시스템</h3>
+                    <p class="tech-description">
+                        다양한 운전 조건과 고장 시나리오 시뮬레이션을 통해 최적의 유지보수 전략을 
+                        제시하고 경제적 의사결정을 지원합니다.
+                    </p>
+                    <ul class="tech-features">
+                        <li>시나리오 기반 시뮬레이션</li>
+                        <li>최적 정비 시점 제안</li>
+                        <li>비용 효과 분석</li>
+                        <li>FMEA 모델링</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Technology Differentiation -->
+            <div class="tech-differentiation" data-aos="fade-up">
+                <h3 class="diff-title">기존 기술 대비 차별점</h3>
+                <div class="comparison-table">
+                    <div class="comparison-row comparison-header">
+                        <div class="comparison-cell">구분</div>
+                        <div class="comparison-cell">기존 기술</div>
+                        <div class="comparison-cell highlight">본 과제 솔루션</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell"><strong>데이터 수집</strong></div>
+                        <div class="comparison-cell">10분 단위 평균 데이터</div>
+                        <div class="comparison-cell highlight">실시간 고주파 데이터 수집</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell"><strong>모델링</strong></div>
+                        <div class="comparison-cell">단순 3D 모델링</div>
+                        <div class="comparison-cell highlight">물리 법칙 기반 고충실도 모델</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell"><strong>정비 방식</strong></div>
+                        <div class="comparison-cell">시간 기반 / 사후 정비</div>
+                        <div class="comparison-cell highlight">데이터 기반 예지보전</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell"><strong>호환성</strong></div>
+                        <div class="comparison-cell">특정 제조사 종속</div>
+                        <div class="comparison-cell highlight">다양한 터빈 기종 호환</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell"><strong>진단 정확도</strong></div>
+                        <div class="comparison-cell">사후 분석 위주</div>
+                        <div class="comparison-cell highlight">AI 기반 고정밀 예측 (89%)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization Section -->
+    <section class="organization" id="organization">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">ORGANIZATION</span>
+                <h2 class="section-title">추진 체계</h2>
+                <p class="section-subtitle">10개 기관이 협력하는 국가 R&D 프로젝트</p>
+            </div>
+
+            <!-- Lead Organization -->
+            <div class="lead-org" data-aos="fade-up">
+                <div class="org-badge">주관기관</div>
+                <div class="org-card org-lead">
+                    <div class="org-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>디엑스랩즈(주)</h3>
+                    <p class="org-role">총괄 책임 및 통합 솔루션 개발</p>
+                    <ul class="org-tasks">
+                        <li>통합 데이터베이스 개발 및 관리</li>
+                        <li>운영 지원 솔루션 및 GUI 개발</li>
+                        <li>SCADA/CMS 데이터 수집 및 분석</li>
+                        <li>전체 시스템 통합 및 실증</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Participating Organizations -->
+            <div class="org-grid">
+                <div class="org-category" data-aos="fade-up">
+                    <h3 class="org-category-title">연구기관</h3>
+                    <div class="org-cards">
+                        <div class="org-card">
+                            <div class="org-number">01</div>
+                            <h4>고등기술연구원</h4>
+                            <p class="org-specialty">메인 베어링 및 하부구조</p>
+                            <ul class="org-details">
+                                <li>메인 베어링 물리모델 개발</li>
+                                <li>하부구조 부식모델 개발</li>
+                                <li>OpenFAST 통합하중해석</li>
+                            </ul>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-number">02</div>
+                            <h4>한국전자기술연구원</h4>
+                            <p class="org-specialty">AI 및 고장진단</p>
+                            <ul class="org-details">
+                                <li>생성형 AI 기반 모델 최신화</li>
+                                <li>AI 기반 고장진단 기술</li>
+                                <li>데이터 분석 알고리즘</li>
+                            </ul>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-number">03</div>
+                            <h4>선박해양플랜트연구소</h4>
+                            <p class="org-specialty">구조 디지털 트윈</p>
+                            <ul class="org-details">
+                                <li>지지구조 디지털 트윈 알고리즘</li>
+                                <li>수조 모형시험 기법 개발</li>
+                                <li>해상 구조물 건전성 모니터링</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="org-category" data-aos="fade-up">
+                    <h3 class="org-category-title">대학</h3>
+                    <div class="org-cards">
+                        <div class="org-card">
+                            <div class="org-number">04</div>
+                            <h4>국립강원대학교</h4>
+                            <p class="org-specialty">제어 시스템</p>
+                            <ul class="org-details">
+                                <li>범용 통합 제어기 설계</li>
+                                <li>제어 파라미터 자동생성</li>
+                                <li>출력 제어 알고리즘</li>
+                            </ul>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-number">05</div>
+                            <h4>국립군산대학교</h4>
+                            <p class="org-specialty">블레이드</p>
+                            <ul class="org-details">
+                                <li>블레이드 가상 물리모델</li>
+                                <li>공력학적 특성 분석</li>
+                                <li>블레이드 잔여수명 예측</li>
+                            </ul>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-number">06</div>
+                            <h4>국립서울대학교</h4>
+                            <p class="org-specialty">기어박스</p>
+                            <ul class="org-details">
+                                <li>기어박스 가상 물리모델</li>
+                                <li>동역학 시뮬레이션</li>
+                                <li>기어박스 잔여수명 예측</li>
+                            </ul>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-number">07</div>
+                            <h4>국립창원대학교</h4>
+                            <p class="org-specialty">발전기</p>
+                            <ul class="org-details">
+                                <li>발전기-컨버터 가상모델</li>
+                                <li>전자기적 특성 분석</li>
+                                <li>발전기 고장/수명 예측</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="org-category" data-aos="fade-up">
+                    <h3 class="org-category-title">산업체 및 수요기관</h3>
+                    <div class="org-cards">
+                        <div class="org-card">
+                            <div class="org-number">08</div>
+                            <h4>(주)티에스윈드</h4>
+                            <p class="org-specialty">실증 및 운영</p>
+                            <ul class="org-details">
+                                <li>실증단지 CMS/SCADA 설치</li>
+                                <li>운영 데이터 확보</li>
+                                <li>유지보수 데이터 제공</li>
+                            </ul>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-number">09</div>
+                            <h4>한국남동발전(주)</h4>
+                            <p class="org-specialty">수요기관</p>
+                            <ul class="org-details">
+                                <li>실증 사이트 제공</li>
+                                <li>솔루션 검증 및 피드백</li>
+                                <li>상용화 협력</li>
+                            </ul>
+                        </div>
+                        <div class="org-card">
+                            <div class="org-number">10</div>
+                            <h4>한국해상풍력(주)</h4>
+                            <p class="org-specialty">수요기관</p>
+                            <ul class="org-details">
+                                <li>해상풍력 실증 지원</li>
+                                <li>현장 적용성 검증</li>
+                                <li>해상 환경 데이터 제공</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">TIMELINE</span>
+                <h2 class="section-title">추진 일정</h2>
+                <p class="section-subtitle">2025년 7월 ~ 2030년 6월 (5년간)</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">1차년도 (2025.07 ~ 2026.06)</div>
+                        <h3 class="timeline-title">기초 설계 및 데이터 구축</h3>
+                        <ul class="timeline-tasks">
+                            <li>핵심 부품별 물리모델 설계</li>
+                            <li>통합 데이터베이스 아키텍처 구축</li>
+                            <li>SCADA/CMS 데이터 수집 시스템 구현</li>
+                            <li>기초 AI 알고리즘 개발 착수</li>
+                            <li>1차 실증단지(군산 새만금) 선정 및 준비</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2차년도 (2026.07 ~ 2027.06)</div>
+                        <h3 class="timeline-title">초기 모델 개발 및 검증</h3>
+                        <ul class="timeline-tasks">
+                            <li>블레이드, 기어박스, 베어링 초기 물리모델 완성</li>
+                            <li>Living Model 알고리즘 개발</li>
+                            <li>생성형 AI 기반 고장진단 프로토타입</li>
+                            <li>OpenFAST 통합 작업 시작</li>
+                            <li>1차 실증단지 데이터 수집 및 분석</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">3차년도 (2027.07 ~ 2028.06)</div>
+                        <h3 class="timeline-title">시스템 통합 및 고도화</h3>
+                        <ul class="timeline-tasks">
+                            <li>전체 물리모델 통합 완료</li>
+                            <li>AI 학습 시스템 고도화</li>
+                            <li>잔여수명(RUL) 예측 모델 개발</li>
+                            <li>의사결정 지원 GUI 개발</li>
+                            <li>2차 실증단지(군위, 제주) 파일럿 테스트</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">4차년도 (2028.07 ~ 2029.06)</div>
+                        <h3 class="timeline-title">실증 확대 및 최적화</h3>
+                        <ul class="timeline-tasks">
+                            <li>다양한 터빈 기종 호환성 검증</li>
+                            <li>해상풍력 환경 적용성 테스트</li>
+                            <li>FMEA 모델링 및 시나리오 분석</li>
+                            <li>통합 플랫폼 성능 최적화</li>
+                            <li>3차 실증단지(서남해 해상) 실증 착수</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">5차년도 (2029.07 ~ 2030.06)</div>
+                        <h3 class="timeline-title">최종 검증 및 상용화</h3>
+                        <ul class="timeline-tasks">
+                            <li>전체 시스템 통합 테스트</li>
+                            <li>최종 성능 검증 (O&M 비용 10% 절감 달성)</li>
+                            <li>사용자 매뉴얼 및 기술문서 완성</li>
+                            <li>상용화 준비 및 기술이전</li>
+                            <li>국내외 학술대회 발표 및 논문 출판</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demonstration Section -->
+    <section class="demonstration" id="demonstration">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">DEMONSTRATION</span>
+                <h2 class="section-title">실증 계획</h2>
+                <p class="section-subtitle">육상 및 해상 풍력단지에서의 단계적 실증</p>
+            </div>
+
+            <div class="demo-timeline" data-aos="fade-up">
+                <div class="demo-phase">
+                    <div class="demo-phase-header">
+                        <span class="demo-badge">1차 실증</span>
+                        <h3>정밀도 검증</h3>
+                    </div>
+                    <div class="demo-sites">
+                        <div class="demo-site">
+                            <div class="demo-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>군산 새만금 풍력</span>
+                            </div>
+                            <p class="demo-purpose">물리모델 정밀도 및 기본 기능 검증</p>
+                        </div>
+                        <div class="demo-site">
+                            <div class="demo-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>부안 풍력</span>
+                            </div>
+                            <p class="demo-purpose">SCADA/CMS 연동 및 데이터 수집 안정성 확인</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="demo-phase">
+                    <div class="demo-phase-header">
+                        <span class="demo-badge">2~3차 실증</span>
+                        <h3>범용성 검증</h3>
+                    </div>
+                    <div class="demo-sites">
+                        <div class="demo-site">
+                            <div class="demo-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>군위 화산 풍력</span>
+                            </div>
+                            <p class="demo-purpose">다양한 터빈 기종에 대한 호환성 검증</p>
+                        </div>
+                        <div class="demo-site">
+                            <div class="demo-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>제주 어음 풍력</span>
+                            </div>
+                            <p class="demo-purpose">기상 조건 변화에 따른 모델 적응성 평가</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-arrow">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="demo-phase">
+                    <div class="demo-phase-header">
+                        <span class="demo-badge">4차 실증</span>
+                        <h3>해상 적용성 검증</h3>
+                    </div>
+                    <div class="demo-sites">
+                        <div class="demo-site">
+                            <div class="demo-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>서남해 해상풍력</span>
+                            </div>
+                            <p class="demo-purpose">해상 환경 (부식, 하중, 접근성)에서의 성능 검증</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demonstration Map -->
+            <div class="demo-map" data-aos="fade-up">
+                <h3 class="demo-map-title">실증 단지 위치</h3>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>대한민국 주요 풍력단지</p>
+                        <div class="map-markers">
+                            <div class="map-marker" style="top: 45%; left: 25%;" data-location="군산 새만금">
+                                <i class="fas fa-wind"></i>
+                                <span class="marker-label">군산 새만금</span>
+                            </div>
+                            <div class="map-marker" style="top: 42%; left: 22%;" data-location="부안">
+                                <i class="fas fa-wind"></i>
+                                <span class="marker-label">부안</span>
+                            </div>
+                            <div class="map-marker" style="top: 38%; left: 65%;" data-location="군위">
+                                <i class="fas fa-wind"></i>
+                                <span class="marker-label">군위</span>
+                            </div>
+                            <div class="map-marker" style="top: 85%; left: 30%;" data-location="제주">
+                                <i class="fas fa-wind"></i>
+                                <span class="marker-label">제주</span>
+                            </div>
+                            <div class="map-marker offshore" style="top: 65%; left: 18%;" data-location="서남해">
+                                <i class="fas fa-water"></i>
+                                <span class="marker-label">서남해 해상</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Statistics Section -->
+    <section class="impact" id="impact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">IMPACT</span>
+                <h2 class="section-title">기대 효과 및 주요 지표</h2>
+                <p class="section-subtitle">데이터로 입증되는 혁신의 가치</p>
+            </div>
+
+            <!-- Key Performance Indicators -->
+            <div class="kpi-section" data-aos="fade-up">
+                <h3 class="kpi-title">핵심 성과 지표 (KPI)</h3>
+                <div class="kpi-grid">
+                    <div class="kpi-card primary">
+                        <div class="kpi-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="kpi-value">
+                            <span class="counter" data-count="10">0</span>
+                            <span class="kpi-unit">%+</span>
+                        </div>
+                        <div class="kpi-label">O&M 비용 절감</div>
+                        <p class="kpi-description">데이터 기반 예지보전으로 유지보수 비용 최소화</p>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="kpi-value">
+                            <span class="counter" data-count="41">0</span>
+                            <span class="kpi-unit">%</span>
+                        </div>
+                        <div class="kpi-label">가동 중단 시간 감소</div>
+                        <p class="kpi-description">Siemens Gamesa 사례 기준</p>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="kpi-value">
+                            <span class="counter" data-count="89">0</span>
+                            <span class="kpi-unit">%</span>
+                        </div>
+                        <div class="kpi-label">예측 정비 정확도</div>
+                        <p class="kpi-description">물리 기반 디지털 트윈 적용 시</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Market & Technology Stats -->
+            <div class="stats-section" data-aos="fade-up">
+                <h3 class="stats-title">시장 및 기술 현황</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value-large">
+                                <span class="counter" data-count="20">0</span>~<span class="counter" data-count="35">0</span><span class="stat-unit-large">%</span>
+                            </div>
+                            <div class="stat-label-large">해상풍력 O&M 비용 비중</div>
+                            <p class="stat-desc">전체 수명주기 비용 중 차지하는 비율</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value-large">
+                                <span class="counter" data-count="3">0</span>.<span class="counter" data-count="5">0</span><span class="stat-unit-large">년</span>
+                            </div>
+                            <div class="stat-label-large">국내외 기술 격차</div>
+                            <p class="stat-desc">최고기술보유국(EU) 대비 (2019년 기준)</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value-large">
+                                <span class="counter" data-count="94">0</span><span class="stat-unit-large">억$</span>
+                            </div>
+                            <div class="stat-label-large">글로벌 시장 규모</div>
+                            <p class="stat-desc">디지털 트윈 관련 시장 (2024년 기준)</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value-large">
+                                <span class="counter" data-count="9">0</span>.<span class="counter" data-count="8">0</span><span class="stat-unit-large">%</span>
+                            </div>
+                            <div class="stat-label-large">연평균 성장률 (CAGR)</div>
+                            <p class="stat-desc">물리모델 최신화 관련 시장</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value-large">
+                                <span class="counter" data-count="210">0</span><span class="stat-unit-large">억$</span>
+                            </div>
+                            <div class="stat-label-large">2030년 시장 전망</div>
+                            <p class="stat-desc">구조해석 소프트웨어 시장</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value-large">
+                                <span class="counter" data-count="16">0</span>.<span class="counter" data-count="5">0</span><span class="stat-unit-large">GW</span>
+                            </div>
+                            <div class="stat-label-large">2030 보급 목표</div>
+                            <p class="stat-desc">신규 풍력발전 설비 (해상 12GW + 육상 4.5GW)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expected Outcomes -->
+            <div class="outcomes-section" data-aos="fade-up">
+                <h3 class="outcomes-title">기대 성과</h3>
+                <div class="outcomes-grid">
+                    <div class="outcome-card">
+                        <div class="outcome-icon tech">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4 class="outcome-title">기술적 효과</h4>
+                        <ul class="outcome-list">
+                            <li>국내 풍력 기술 자립화 및 기술 격차 해소</li>
+                            <li>세계 수준의 디지털 트윈 기술 확보</li>
+                            <li>AI 기반 예지보전 원천기술 개발</li>
+                            <li>다양한 터빈 기종 호환 범용 플랫폼 구축</li>
+                        </ul>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon economic">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h4 class="outcome-title">경제적 효과</h4>
+                        <ul class="outcome-list">
+                            <li>O&M 비용 10% 이상 절감으로 LCOE 감소</li>
+                            <li>외산 유지보수 서비스 의존도 절감</li>
+                            <li>발전기 가동률 증대로 수익성 향상</li>
+                            <li>국내 관련 산업 생태계 활성화</li>
+                        </ul>
+                    </div>
+                    <div class="outcome-card">
+                        <div class="outcome-icon social">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="outcome-title">사회적 효과</h4>
+                        <ul class="outcome-list">
+                            <li>탄소중립 목표 달성에 기여</li>
+                            <li>에너지 안보 및 자립도 강화</li>
+                            <li>고급 일자리 창출 및 전문인력 양성</li>
+                            <li>글로벌 신재생에너지 시장 경쟁력 확보</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">자주 묻는 질문</h2>
+                <p class="section-subtitle">과제에 대해 궁금하신 사항을 확인하세요</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>본 과제의 핵심 목표는 무엇인가요?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>본 과제는 고충실도 디지털 트윈과 AI 기술을 결합하여 <strong>국내 공통 적용이 가능한 풍력발전기 지능형 운영 및 유지보수 의사결정 지원 솔루션</strong>을 개발하는 것입니다. 최종 목표는 풍력 발전단지의 운영 및 유지보수(O&M) 비용을 <strong>10% 이상 절감</strong>하고, 국내 풍력 기술의 자립화를 실현하는 것입니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>기존 SCADA 시스템과 어떤 차이가 있나요?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>기존 SCADA 시스템은 10분 단위의 평균 데이터만 제공하여 초기 결함을 포착하기 어렵습니다. 반면 본 솔루션은 <strong>실시간 고주파 데이터 수집</strong>과 <strong>고충실도 물리모델</strong>을 통해 미세 균열 등을 조기에 탐지할 수 있으며, AI 기반 분석으로 사후 분석이 아닌 <strong>예지보전</strong>을 실현합니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>'Living Model'이란 무엇인가요?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Living Model(살아있는 모델)은 실제 풍력터빈의 운전 상태와 성능 저하를 가상 모델이 정확하게 추종하도록, <strong>실시간 센서 데이터를 통해 모델 파라미터를 자동으로 보정하고 최신화</strong>하는 동적 디지털 트윈 기술입니다. 이를 통해 터빈의 실제 상태를 지속적으로 반영하여 진단 정확도를 극대화합니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3>어떤 풍력터빈 기종에 적용 가능한가요?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>본 솔루션은 <strong>NREL의 OpenFAST 기반</strong>으로 개발되어 <strong>다양한 터빈 기종에 공통 적용</strong>이 가능합니다. 특정 제조사에 종속되지 않는 범용 플랫폼으로 설계되어, 국내에 설치된 다양한 제조사의 터빈에 호환됩니다. 육상 및 해상 풍력 모두 적용 가능합니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="faq-question">
+                        <h3>실증 단지는 어디에서 진행되나요?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>실증은 단계적으로 진행됩니다:
+                        <ul>
+                            <li><strong>1차:</strong> 군산 새만금, 부안 풍력 (정밀도 검증)</li>
+                            <li><strong>2~3차:</strong> 군위 화산, 제주 어음 풍력 (범용성 검증)</li>
+                            <li><strong>4차:</strong> 서남해 해상풍력 (해상 환경 적용성 검증)</li>
+                        </ul>
+                        육상과 해상 환경 모두에서 성능을 검증하여 실용성을 확보합니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="faq-question">
+                        <h3>AI는 어떤 방식으로 활용되나요?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>본 과제는 <strong>생성형 AI 기술</strong>을 활용하여 다음과 같은 기능을 구현합니다:
+                        <ul>
+                            <li>물리 모델의 파라미터를 자동으로 추정하고 최신화</li>
+                            <li>SCADA/CMS 데이터에서 이상 패턴 조기 탐지</li>
+                            <li>핵심 부품(기어박스, 베어링 등)의 잔여수명(RUL) 예측</li>
+                            <li>고장 원인 진단 및 최적 정비 시점 제안</li>
+                        </ul>
+                        AI와 물리모델의 융합으로 <strong>89% 수준의 높은 예측 정확도</strong>를 달성합니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="700">
+                    <div class="faq-question">
+                        <h3>개발된 솔루션은 어떻게 활용되나요?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>개발된 솔루션은 다음과 같이 활용됩니다:
+                        <ul>
+                            <li><strong>풍력발전 운영사:</strong> 예지보전을 통한 O&M 비용 절감 및 가동률 향상</li>
+                            <li><strong>풍력터빈 제조사:</strong> 자사 제품의 성능 최적화 및 유지보수 서비스 개선</li>
+                            <li><strong>정부/공기업:</strong> 국가 풍력 발전단지의 효율적 운영 전략 수립</li>
+                            <li><strong>연구기관:</strong> 풍력 기술 연구 및 교육 자료로 활용</li>
+                        </ul>
+                        기술이전 및 상용화를 통해 국내 풍력 산업 전반에 기여합니다.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="800">
+                    <div class="faq-question">
+                        <h3>참여하고 싶거나 문의사항이 있을 경우 어떻게 하나요?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>과제에 대한 문의나 협력 제안은 아래 연락처로 문의해주세요:
+                        <br><strong>주관기관: 디엑스랩즈(주)</strong>
+                        <br>이메일: thjang@dxlabs.co.kr
+                        <br>전화: 010-9089-0655
+                        <br><br>또는 본 페이지 하단의 <a href="#contact" style="color: #00b4d8; text-decoration: underline;">문의 폼</a>을 이용해주세요.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">CONTACT</span>
+                <h2 class="section-title">문의하기</h2>
+                <p class="section-subtitle">과제에 대해 궁금하신 점이 있으시면 문의해주세요</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>주관기관 정보</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>디엑스랩즈(주)</h4>
+                            <p>DX Labs Co., Ltd.</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>이메일</h4>
+                            <p><a href="mailto:contact@dxlabs.co.kr">contact@dxlabs.co.kr</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>전화</h4>
+                            <p>02-XXXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>운영 시간</h4>
+                            <p>평일 09:00 - 18:00 (주말 및 공휴일 휴무)</p>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <h4>과제 정보</h4>
+                        <ul>
+                            <li><strong>사업명:</strong> 신재생에너지 핵심기술개발사업</li>
+                            <li><strong>과제명:</strong> 가상 풍력발전기 기반 지능형 운영 지원 솔루션 개발</li>
+                            <li><strong>기간:</strong> 2025.07 ~ 2030.06 (5년)</li>
+                            <li><strong>참여기관:</strong> 10개 기관</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">이름 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="이름을 입력하세요">
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">소속 기관</label>
+                            <input type="text" id="organization" name="organization" placeholder="소속 기관을 입력하세요">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">이메일 <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">연락처</label>
+                            <input type="tel" id="phone" name="phone" placeholder="010-0000-0000">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">문의 유형 <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">선택하세요</option>
+                                <option value="technology">기술 관련 문의</option>
+                                <option value="collaboration">협력 제안</option>
+                                <option value="demonstration">실증 참여 문의</option>
+                                <option value="investment">투자 문의</option>
+                                <option value="general">일반 문의</option>
+                                <option value="other">기타</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">문의 내용 <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required placeholder="문의 내용을 자세히 입력해주세요"></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <label>
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <span>개인정보 수집 및 이용에 동의합니다 <span class="required">*</span></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> 문의하기
+                        </button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">
+                        <i class="fas fa-wind"></i>
+                        WindTwin
+                    </h3>
+                    <p class="footer-description">
+                        가상 풍력발전기 기반<br>
+                        지능형 운영 지원 솔루션 개발
+                    </p>
+                    <div class="footer-badge">신재생에너지 핵심기술개발사업</div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">빠른 링크</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">과제 소개</a></li>
+                        <li><a href="#technology">기술·차별성</a></li>
+                        <li><a href="#organization">추진 체계</a></li>
+                        <li><a href="#timeline">추진 일정</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">정보</h4>
+                    <ul class="footer-links">
+                        <li><a href="#demonstration">실증 계획</a></li>
+                        <li><a href="#impact">기대 효과</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">문의하기</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">연락처</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-building"></i> 디엑스랩즈(주)</li>
+                        <li><i class="fas fa-envelope"></i> contact@dxlabs.co.kr</li>
+                        <li><i class="fas fa-phone"></i> 02-XXXX-XXXX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 디엑스랩즈(주). All rights reserved.</p>
+                <p class="footer-note">본 과제는 신재생에너지 핵심기술개발사업의 일환으로 수행됩니다.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="맨 위로">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
